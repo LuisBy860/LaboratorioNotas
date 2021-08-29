@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "RegistroNotas";
+  
+}
+@using (Html.BeginForm("save","NotasEstduiantes", FormMethod.Post))
+{
+
+    <label for="nombre">Ingresa tu nombre</label>
+    <br>
+    <input type="text" name="nombre">
+    <br>
+    <label for="labouno">ingresa nota</label>
+    <br>
+    <input type="text" name="labouno">
+    <br>
+    <label for="parcialuno">ingrese nota</label>
+    <br>
+    <input type="text" name="parcialuno">
+    <br>
+    <label for="labodos">ingresa nota</label>
+    <br>
+    <input type="text" name="labodos">
+    <br>
+    <label for="parcialdos">ingrese nota</label>
+    <br>
+    <input type="text" name="parcialdos">
+    <br>
+    <label for="labotres">ingrese nota</label>
+    <br>
+    <input type="text" name="labotres">
+    <br>
+    <label for="parcialtres">ingrese nota</label>
+    <br />
+    <input type="text" name="parcialtres">
+    <br>
+
+    <input type="submit" />
+
+}
