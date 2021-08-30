@@ -37,8 +37,8 @@ namespace LaboratorioNotas.Controllers
                 emp.NotaFinal = NotaFinal;
 
 
-                float Final = (float) float.Parse (labouno) + float.Parse(parcialdos) + float.Parse(labodos) + float.Parse(parcialdos) + float.Parse(labotres) + float.Parse(parcialtres) / 3;
-                Final = float.Parse(NotaFinal);
+                //float Final = (float) float.Parse (labouno) + float.Parse(parcialdos) + float.Parse(labodos) + float.Parse(parcialdos) + float.Parse(labotres) + float.Parse(parcialtres) / 3;
+                //Final = float.Parse(NotaFinal);
 
 
                 bd.NotasEstudiantes.Add(emp); //este es como la funcion agregar de un crud 
