@@ -36,6 +36,7 @@ namespace LaboratorioNotas.Controllers
                 emp.parcialtres = parcialtres;
                 emp.NotaFinal = NotaFinal;
 
+
                 float Final = (float) float.Parse (labouno) + float.Parse(parcialdos) + float.Parse(labodos) + float.Parse(parcialdos) + float.Parse(labotres) + float.Parse(parcialtres) / 3;
                 Final = float.Parse(NotaFinal);
 
