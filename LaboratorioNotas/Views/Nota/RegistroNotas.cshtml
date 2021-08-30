@@ -1,9 +1,14 @@
 ﻿
 @{
     ViewBag.Title = "RegistroNotas";
-  
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
-@using (Html.BeginForm("save","NotasEstduiantes", FormMethod.Post))
+
+<h1>@ViewBag.EnviandoDatosRegistro</h1>
+
+
+@using (Html.BeginForm("save", "Nota", FormMethod.Post))
 {
 
     <label for="nombre">Ingresa tu nombre</label>
@@ -38,3 +43,4 @@
     <input type="submit" />
 
 }
+

@@ -17,6 +17,7 @@
           <Property Name="parcialuno" Type="varchar" MaxLength="50" />
           <Property Name="parcialdos" Type="varchar" MaxLength="50" />
           <Property Name="parcialtres" Type="varchar" MaxLength="50" />
+          <Property Name="NotaFinal" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="NotasModelStoreContainer">
           <EntitySet Name="NotasEstudiantes" EntityType="Self.NotasEstudiantes" Schema="dbo" store:Type="Tables" />
@@ -38,8 +39,9 @@
           <Property Name="parcialuno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="parcialdos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="parcialtres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NotaFinal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="NotasEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="NotasEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="NotasEstudiantes" EntityType="Self.NotasEstudiantes" />
         </EntityContainer>
       </Schema>
@@ -47,7 +49,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NotasModelStoreContainer" CdmEntityContainer="NotasEntities">
+        <EntityContainerMapping StorageEntityContainer="NotasModelStoreContainer" CdmEntityContainer="NotasEntities1">
           <EntitySetMapping Name="NotasEstudiantes">
             <EntityTypeMapping TypeName="NotasModel.NotasEstudiantes">
               <MappingFragment StoreEntitySet="NotasEstudiantes">
@@ -59,6 +61,7 @@
                 <ScalarProperty Name="parcialuno" ColumnName="parcialuno" />
                 <ScalarProperty Name="parcialdos" ColumnName="parcialdos" />
                 <ScalarProperty Name="parcialtres" ColumnName="parcialtres" />
+                <ScalarProperty Name="NotaFinal" ColumnName="NotaFinal" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -22,5 +22,6 @@ namespace LaboratorioNotas.Models
         public string parcialuno { get; set; }
         public string parcialdos { get; set; }
         public string parcialtres { get; set; }
+        public string NotaFinal { get; set; }
     }
 }

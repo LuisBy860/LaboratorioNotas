@@ -13,10 +13,10 @@ namespace LaboratorioNotas.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NotasEntities : DbContext
+    public partial class NotasEntities1 : DbContext
     {
-        public NotasEntities()
-            : base("name=NotasEntities")
+        public NotasEntities1()
+            : base("name=NotasEntities1")
         {
         }
     
